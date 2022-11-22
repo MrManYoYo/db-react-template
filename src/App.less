@@ -3,4 +3,36 @@
   height: 100vh;
   color: var(--main-text-color);
   background-color: var(--main-background);
+
+  &.db-layout {
+    display: flex;
+    overflow: hidden;
+  }
+
+}
+.db-layout-sidebar {
+  width: @sidebar-width;
+  height: 100%;
+  overflow: hidden;
+
+  &.collapse {
+    width: @sidebar-collapse-width;
+  }
+}
+.db-layout-header {
+  width: 100%;
+  height: @header-height; 
+}
+.db-layout-body {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.db-layout-main {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
 }

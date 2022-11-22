@@ -1,5 +1,7 @@
 /* bring in normalize.css styles */
 @import-normalize;
+/* theme styles */
+@import '@/assets/Theme/light.cssvar.less';
 
 /* rest of app styles */
 body {
@@ -12,6 +14,5 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

@@ -1,0 +1,12 @@
+{
+  "@header-height": "50px",
+  "@sidebar-width": "160px",
+  "@sidebar-collapse-width": "50px",
+
+  "@default-padding": "16px",
+  "@less-padding": "10px",
+  "@large-padding": "20px",
+  "@default-margin": "16px",
+  "@less-margin": "10px",
+  "@large-margin": "20px"
+}

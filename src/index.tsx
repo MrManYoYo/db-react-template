@@ -5,7 +5,6 @@ import { store } from './stores';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import '@/assets/Theme/light.cssvar.less';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

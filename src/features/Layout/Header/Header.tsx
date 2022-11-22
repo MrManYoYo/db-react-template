@@ -1,8 +1,9 @@
 import React from 'react';
+import './header.less';
 
 export const Header = () => {
   return (
-    <div>
+    <div className='db-app-header'>
       Header
     </div>
   );
