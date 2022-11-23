@@ -9,18 +9,6 @@
     text-align: center;
     height: @sidebar-header-height;
   }
-  .logo-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-weight: bold;
-    color: var(--main-text-color);
-
-    .logo-asset {
-      margin-right: 5px;
-    }
-  }
 
   .db-sidebar-body {
     height: calc(100% - @sidebar-header-height - @sidebar-footer-height);
@@ -28,5 +16,19 @@
   }
   .db-sidebar-footer {
     height: @sidebar-footer-height;
+  }
+}
+
+/* logo styles */
+.logo-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--main-text-color);
+
+  .logo-asset {
+    margin-right: 5px;
   }
 }

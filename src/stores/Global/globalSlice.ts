@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../index";
 
-enum ThemeType {
+export enum ThemeType {
   LIGHT = 'light',
   DARK = 'dark'
 }
@@ -23,3 +24,6 @@ export const globalSlice = createSlice({
   }
 })
 
+export const selectTheme = (state: RootState) => state.global.theme
+
+export const { toggleTheme } = globalSlice.actions
