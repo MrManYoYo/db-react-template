@@ -1,4 +1,4 @@
-const GlobalLessVar = require('./src/global.var.json')
+const GlobalLessVar = require('./src/less-variable.global.json')
 
 const CracoLessPlugin = require('craco-less');
 const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
@@ -21,6 +21,7 @@ module.exports = {
         lessLoaderOptions: {
           lessOptions: {
             modifyVars: {
+              // modify need rebuild
               ...GlobalLessVar,
             },
             javascriptEnabled: true,

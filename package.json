@@ -17,6 +17,7 @@
     "react-redux": "^8.0.4",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "simplebar-react": "^2.4.3",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
@@ -25,9 +26,11 @@
     "@types/loadable__component": "^5.13.4",
     "antd-dayjs-webpack-plugin": "^1.0.6",
     "craco-less": "^2.0.0",
-    "dayjs": "^1.11.6"
+    "dayjs": "^1.11.6",
+    "nodemon": "^2.0.20"
   },
   "scripts": {
+    "dev": "nodemon -w craco.config.js -w ./src/less-variable.global.json --exec \"craco start\"",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

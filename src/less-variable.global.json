@@ -1,0 +1,12 @@
+{
+  "@db-header-height": "50px",
+  "@db-sidebar-width": "160px",
+  "@db-sidebar-collapse-width": "50px",
+
+  "@db-default-padding": "16px",
+  "@db-less-padding": "10px",
+  "@db-large-padding": "20px",
+  "@db-default-margin": "16px",
+  "@db-less-margin": "10px",
+  "@db-large-margin": "20px"
+}
