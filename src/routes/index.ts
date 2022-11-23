@@ -22,6 +22,20 @@ export const RoutesList: RouteMenu[] = [
     path: '/',
     component: makeLazyRoute('Home')
   },
+  // view Route loading page
+  {
+    name: 'RouteLoading',
+    path: '/route-loading',
+    component: () => RouteLoading
+  },
+  // view ErrorBoundary page
+  {
+    name: 'ErrorBoundary',
+    path: '/errorboundary',
+    component: loadable(() => import(`@/features/ErrorBoundary/ErrorBoundary.test`), {
+      fallback: RouteLoading
+    })
+  },
   {
     name: 'Setting',
     path: '/setting',

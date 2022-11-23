@@ -4,7 +4,8 @@ import './header.less';
 export const Header = () => {
   return (
     <div className='db-app-header'>
-      Header
+      <div className='db-header-lt'></div>
+      <div className='db-header-rt'></div>
     </div>
   );
 }

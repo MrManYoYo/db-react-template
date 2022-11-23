@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom'
 import { RoutesList } from './routes'
 import '@/App.less';
+// simplebar scroll styles
+import 'simplebar-react/dist/simplebar.min.css';
 
 // Error Boundary
 import ErrorBoundary from '@/features/ErrorBoundary/ErrorBoundary';

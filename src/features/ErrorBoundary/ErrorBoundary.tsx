@@ -24,12 +24,19 @@ export default class ErrorBoundary extends React.PureComponent<Props, State> {
     }
   }
 
-  // static getDerivedStateFromError (error: Error) {
-  //   return { error }
-  // }
+  static getDerivedStateFromError (error: Error) {
+    return { error }
+  }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
     this.setState({ error, errorInfo })
+  }
+
+  reset () {
+    this.setState({
+      error: null,
+      errorInfo: null
+    })
   }
 
   renderError () {
@@ -39,6 +46,7 @@ export default class ErrorBoundary extends React.PureComponent<Props, State> {
         <h3>页面加载失败</h3>
         {error && <div>{error.toString()}</div>}
         {errorInfo && <div>{errorInfo.componentStack}</div>}
+        <button onClick={this.reset.bind(this)}>Reset</button>
       </div>
     )
   }
