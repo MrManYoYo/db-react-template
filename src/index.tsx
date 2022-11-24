@@ -2,11 +2,18 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './stores';
+import { initialMediaTheme } from './stores/Global/globalSlice';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
+
 const container = document.getElementById('root')!;
+
+// Prevent screen flicker when rendering app (dark mode)
+const doc = document.documentElement;
+doc.setAttribute('data-theme', initialMediaTheme)
+
 const root = createRoot(container);
 
 root.render(

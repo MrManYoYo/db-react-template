@@ -10,8 +10,11 @@ interface GlobalState {
   theme: ThemeType
 }
 
+const localTheme = window.localStorage.getItem('DB-THEME-TYPE')
+export const initialMediaTheme = window.matchMedia?.('(prefers-color-scheme: dark)')?.matches && !localTheme ? ThemeType.DARK : (localTheme ?? ThemeType.LIGHT)
+
 const initialState: GlobalState = {
-  theme: ThemeType.LIGHT
+  theme: initialMediaTheme as ThemeType
 }
 
 export const globalSlice = createSlice({

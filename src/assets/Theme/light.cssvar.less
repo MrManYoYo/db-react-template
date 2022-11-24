@@ -1,8 +1,51 @@
-@import './dark.cssvar.less';
-
 :root {
-  --main-text-color: #222;
-  --main-background: #fff;
+  --db-color-white: #fff;
+  --db-color-black: #000;
+  --db-color-gray-0: var(--db-color-white);
+  --db-color-gray-100: #dbdbdb;
+  --db-color-gray-200: #acacac;
+  --db-color-gray-300: #7d7d7d;
+  --db-color-gray-400: #5a5a5a;
+  --db-color-gray-500: #434343;
+  --db-color-gray-600: #303030;
+  --db-color-gray-700: #262626;
+  --db-color-gray-800: #1d1d1d;
+  --db-color-gray-900: #141414;
+  --db-color-gray-1000: var(--db-color-black);
 
-  --sidebar-background: #fff
+  --db-color-emphasis-0: var(--db-color-gray-0);
+  --db-color-emphasis-100: var(--db-color-gray-100);
+  --db-color-emphasis-200: var(--db-color-gray-200);
+  --db-color-emphasis-300: var(--db-color-gray-300);
+  --db-color-emphasis-400: var(--db-color-gray-400);
+  --db-color-emphasis-500: var(--db-color-gray-500);
+  --db-color-emphasis-600: var(--db-color-gray-600);
+  --db-color-emphasis-700: var(--db-color-gray-700);
+  --db-color-emphasis-800: var(--db-color-gray-800);
+  --db-color-emphasis-900: var(--db-color-gray-900);
+  --db-color-emphasis-1000: var(--db-color-gray-1000);
+
+  --db-color-text-0: var(--db-color-gray-0);
+  --db-color-text-100: var(--db-color-gray-100);
+  --db-color-text-200: var(--db-color-gray-200);
+  --db-color-text-300: var(--db-color-gray-300);
+  --db-color-text-400: var(--db-color-gray-400);
+  --db-color-text-500: var(--db-color-gray-500);
+  --db-color-text-600: var(--db-color-gray-600);
+  --db-color-text-700: var(--db-color-gray-700);
+  --db-color-text-800: var(--db-color-gray-800);
+  --db-color-text-900: var(--db-color-gray-900);
+  --db-color-text-1000: var(--db-color-gray-1000);
+  
+  --db--main-background: var(--db-color-white);
+
+  --db--sidebar-background: var(--db-color-white)
+
+  --db-global-radius: 2px;
+  
+  --db-transition-fast: 200ms;
+  --db-transition-slow: 400ms;
+  --db-transition-timing-default: cubic-bezier(0.08,0.52,0.52,1);
 }
+
+@import './dark.cssvar.less';

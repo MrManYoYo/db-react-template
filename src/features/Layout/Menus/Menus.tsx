@@ -3,7 +3,7 @@ import SimpleBar from 'simplebar-react';
 import './menus.less';
 
 import { RoutesList } from '@/routes'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Menus = () => {
   return (
@@ -12,7 +12,7 @@ export const Menus = () => {
         {
           RoutesList.map(routeData =>
             <div key={routeData.name} className='menus-item'>
-              <NavLink to={routeData.path}>{routeData.name}</NavLink>
+              <Link to={routeData.path}>{routeData.name}</Link>
             </div>
           )
         }

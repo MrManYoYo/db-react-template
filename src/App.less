@@ -1,8 +1,11 @@
 .db-app {
   width: 100vw;
   height: 100vh;
-  color: var(--main-text-color);
-  background-color: var(--main-background);
+  color: var(--db-color-text-900);
+  background-color: var(--db--main-background);
+
+  transition: background-color var(--db-transition-fast),
+    color var(--db-transition-fast);
 
   &.db-layout {
     display: flex;

@@ -1,11 +1,22 @@
 /* toggle theme styles */
 .theme-toggle {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .theme-toggle-wrapper {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color ;
+
+    &:hover {
+      background-color: var(--db-color-emphasis-100);
+    }
+  }
 
   .toggle-theme-icon {
     cursor: pointer;

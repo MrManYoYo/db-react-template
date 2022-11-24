@@ -15,15 +15,7 @@ import ErrorBoundary from '@/features/ErrorBoundary/ErrorBoundary';
 import Header from '@/features/Layout/Header/Header';
 import SiderBar from '@/features/Layout/Sidebar/Sidebar';
 
-import { useAppSelector } from '@/app/hooks';
-import { selectTheme } from '@/stores/Global/globalSlice'
-// import { selectTheme, ThemeType, toggleTheme } from '@/stores/Global/globalSlice'
-
 function App() {
-  const theme = useAppSelector(selectTheme)
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-  }, [theme])
   return (
     <BrowserRouter>
       <div className='db-app db-layout'>
